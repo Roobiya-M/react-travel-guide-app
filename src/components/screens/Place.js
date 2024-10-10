@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import Header from './includes/Header'
 import axios from 'axios';
 import styled from 'styled-components';
-import {useParams} from 'react-router-dom';
+import {useParams,Link} from 'react-router-dom';
 import { BASE_URL } from '../../axiosConfig';
 import { UserContext } from '../../App';
 
@@ -37,6 +37,9 @@ function Place() {
                 <title>{place.name} | Travel Guide App</title>
             </Helmet>
             <Header />
+            <BackContainer>
+                <Button to="/">Back</Button>
+            </BackContainer>
             <MainContainer>
                 <Title>{place.name}</Title>
                 <InfoContainer>
@@ -124,6 +127,22 @@ const SubHeading = styled.h3`
 const Description = styled.p`
     font-size:16px;
     line-height:1.6em;
+`;
+const BackContainer = styled.div`
+    display:flex;
+    align-items:center;
+    width:90%;
+    margin:0 auto;
+    justify-content:flex-end;
+`;
+const Button = styled(Link)`
+    background-color:#046bf7;
+    border-radius:4px;
+    padding:13px 54px;
+    border:none;
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
 `;
 
 
