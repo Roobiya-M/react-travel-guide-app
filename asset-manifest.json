@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/react-travel-guide-app/static/css/main.f896abd4.css",
-    "main.js": "/react-travel-guide-app/static/js/main.71911f87.js",
+    "main.js": "/react-travel-guide-app/static/js/main.6a4cb5af.js",
     "static/js/453.9cc07179.chunk.js": "/react-travel-guide-app/static/js/453.9cc07179.chunk.js",
     "static/media/place.svg": "/react-travel-guide-app/static/media/place.7d64241c68d27142eb06e55910cd545d.svg",
     "index.html": "/react-travel-guide-app/index.html",
     "static/media/logo.svg": "/react-travel-guide-app/static/media/logo.5c4eda4450d0e16102da816513cee50f.svg",
     "main.f896abd4.css.map": "/react-travel-guide-app/static/css/main.f896abd4.css.map",
-    "main.71911f87.js.map": "/react-travel-guide-app/static/js/main.71911f87.js.map",
+    "main.6a4cb5af.js.map": "/react-travel-guide-app/static/js/main.6a4cb5af.js.map",
     "453.9cc07179.chunk.js.map": "/react-travel-guide-app/static/js/453.9cc07179.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f896abd4.css",
-    "static/js/main.71911f87.js"
+    "static/js/main.6a4cb5af.js"
   ]
 }
