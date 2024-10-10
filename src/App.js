@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route,Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route,Navigate, HashRouter } from 'react-router-dom';
 import Places from './components/screens/Places.js';
 import Place from './components/screens/Place.js';
 import Login from './components/screens/Login.js';
@@ -37,7 +37,7 @@ function App() {
     loading?(<h1>Loading</h1>):(
       <div>
         <UserContext.Provider value={{userData,updateUserData}}>
-          <Router>
+          <HashRouter>
               <Routes>
                   <Route element={<Places />} path="/" exact />
                   <Route element={<PrivateRoute Component={Place} />} path="/place/:id" exact />
@@ -46,7 +46,7 @@ function App() {
                   <Route element={<SignUp />} path="/auth/create/" exact />
                   <Route component={NotFound} />
               </Routes>
-          </Router>  
+          </HashRouter>  
         </UserContext.Provider>
       </div>
     )
